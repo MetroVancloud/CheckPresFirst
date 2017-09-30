@@ -7,17 +7,17 @@ import java.io.Serializable;
  */
 public class CheckPresInputTemp implements Serializable {
 
-    private String patientId;	//  varchar2(100)	y		患者id，非唯一值索引
-    private String checkInput;	//  long	y		处方信息
+    private String patientId = "";	//  varchar2(100)	y		患者id，非唯一值索引
+    private String checkInput = "";	//  long	y		处方信息
     private int lookTag;	    //  number	y	0	审核结果是否已经看过，1表示已经看过，0表示没有看过
     private String presDate;	//  date	y	sysdate	处方日期
-    private String id;	        //  varchar2(100)			处方唯一编号
-    private String patientName;	//  varchar2(100)	y		患者姓名
-    private String presId;	    //  varchar2(100)	y		处方号
-    private String doctorId;	//  varchar2(100)	y		医生id
-    private String doctorName;	//  varchar2(100)	y		医生姓名
-    private String deptCode;	//  varchar2(100)	y		科室编码
-    private String deptName;	//  varchar2(100)	y		科室名称
+    private String id = "";	        //  varchar2(100)			处方唯一编号
+    private String patientName = "";	//  varchar2(100)	y		患者姓名
+    private String presId = "";	    //  varchar2(100)	y		处方号
+    private String doctorId = "";	//  varchar2(100)	y		医生id
+    private String doctorName = "";	//  varchar2(100)	y		医生姓名
+    private String deptCode = "";	//  varchar2(100)	y		科室编码
+    private String deptName = "";	//  varchar2(100)	y		科室名称
     private int warmLevel;	    //  number	y		处方警告级别，-1表示拦截，0表示没有问题，1表示慎用，2表示禁忌（取一个处方中最严重的警告级别）
 
     private static final long serialVersionUID = 1L;
